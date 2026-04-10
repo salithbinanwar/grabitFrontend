@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Better touch targets on mobile */
+@layer base {
+  button,
+  a {
+    touch-action: manipulation;
+  }
+
+  /* Prevent zoom on input focus on iOS */
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar (optional - works in modern browsers) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
